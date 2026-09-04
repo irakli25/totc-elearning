@@ -128,7 +128,7 @@ export default async function CourseDetailPage({
                 <h2 className="text-2xl font-semibold text-ink lg:text-[32px]">
                   4 out of 5
                 </h2>
-                <p className="mt-1 text-lg text-teal-400">Top Raiting</p>
+                <p className="mt-1 text-lg text-teal-400">Top Rated</p>
                 <ul className="mt-6 flex max-w-[560px] flex-col gap-3">
                   {ratingBars.map((bar) => (
                     <li key={bar.label} className="flex items-center gap-4">

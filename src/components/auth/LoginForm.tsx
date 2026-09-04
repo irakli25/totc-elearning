@@ -65,7 +65,7 @@ export function LoginForm() {
             className="size-[15px] rounded-[3px] border border-[#a1a1a1] accent-teal-400"
             {...register("remember")}
           />
-          Rememebr me
+          Remember me
         </label>
         <Link
           href="/login"

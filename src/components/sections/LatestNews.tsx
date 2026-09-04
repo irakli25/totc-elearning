@@ -3,14 +3,14 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { newsFeatured, newsList } from "@/lib/content";
 
-/* "Lastest News and Resources" — Figma node 10:382. The heading keeps the
- * file's original spelling. One featured card beside a three-item list. */
+/* "Latest News and Resources" — Figma node 10:382. The frame spells it
+ * "Lastest". One featured card beside a three-item list. */
 export function LatestNews() {
   return (
     <section className="py-16 lg:py-[100px]">
       <Container className="flex flex-col items-center">
         <h2 className="display-md text-center font-semibold text-ink">
-          Lastest News and Resources
+          Latest News and Resources
         </h2>
         <p className="mt-4 max-w-[676px] text-center text-lg leading-[1.8] text-body lg:text-2xl">
           See the developments that have occurred to TOTC in the world
