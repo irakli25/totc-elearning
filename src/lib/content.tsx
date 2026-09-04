@@ -67,7 +67,7 @@ export const featureRows: FeatureRowContent[] = [
     ],
     image: "/images/features/podium-view.png",
     alt: "The TOTC classroom view with a teacher podium and student grid",
-    ratio: "783/483",
+    ratio: "1849/1101",
     side: "left",
   },
   {
@@ -76,7 +76,7 @@ export const featureRows: FeatureRowContent[] = [
     body: "Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.",
     image: "/images/features/teaching-tools.png",
     alt: "A student handing in an assignment inside the TOTC interface",
-    ratio: "637/611",
+    ratio: "1357/1222",
     side: "right",
   },
   {
@@ -85,7 +85,7 @@ export const featureRows: FeatureRowContent[] = [
     body: "Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.",
     image: "/images/features/assessments.png",
     alt: "A live true or false quiz question shown to a class",
-    ratio: "617/651",
+    ratio: "1340/1448",
     side: "left",
   },
   {
@@ -94,7 +94,7 @@ export const featureRows: FeatureRowContent[] = [
     body: "Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.",
     image: "/images/features/gradebook.png",
     alt: "The TOTC gradebook listing students and their scores",
-    ratio: "808/560",
+    ratio: "1761/1246",
     side: "right",
   },
   {
@@ -103,7 +103,7 @@ export const featureRows: FeatureRowContent[] = [
     body: "Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.",
     image: "/images/features/one-on-one.png",
     alt: "A teacher speaking privately with a student in a breakout view",
-    ratio: "755/499",
+    ratio: "1522/1130",
     side: "left",
   },
 ];

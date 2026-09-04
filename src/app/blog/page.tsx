@@ -30,7 +30,10 @@ export default function BlogPage() {
             sizes="100vw"
             className="-z-10 object-cover"
           />
-          <span aria-hidden className="absolute inset-0 -z-10 bg-ink-soft/55" />
+          <span
+            aria-hidden
+            className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-soft/85 via-ink-soft/65 to-ink-soft/40"
+          />
           <Container className="py-20 lg:py-[130px]">
             <div className="flex max-w-[688px] flex-col gap-6 text-white">
               <p className="text-lg lg:text-2xl">{blogHero.kicker}</p>
