@@ -4,10 +4,15 @@ A Next.js implementation of the TOTC / Skilline e-learning design from Figma:
 a marketing landing page, a course catalogue with detail pages, a membership
 and pricing page, a blog with article pages, and login and register screens.
 
-Design source:
-[E-Learning Site (Community)](https://www.figma.com/design/lElMe5N8yxWj4cqdLcssJO/E-Learning-Site--Community-)
+**Live site:** https://totc-elearning.vercel.app
 
 ![TOTC landing page hero](./docs/screenshot-hero.png)
+
+> The design is not mine. It is the [E-Learning Site (Community)](https://www.figma.com/design/lElMe5N8yxWj4cqdLcssJO/E-Learning-Site--Community-)
+> file, published to the Figma Community by its author. What is being shown here
+> is the implementation: the components, the responsive behaviour, the content
+> layer and the copy. TOTC is not a real company, and every figure on the page
+> is invented.
 
 ## Stack
 
@@ -98,8 +103,13 @@ the email `taken@totc.dev`. Any other credentials succeed and redirect to
    screens are not a navigational dead end.
 3. **Legal pages.** `/privacy` and `/terms` are stubs, added because the footer
    in the design links to both.
-4. **Typos preserved.** "Lastest News and Resources", "Rememebr me", "View
-   hisotry" and "Top Raiting" are spelled as they are in the Figma file.
+4. **Spelling corrected.** The frame reads "Lastest News and Resources",
+   "Rememebr me", "View hisotry", "Top Raiting", "Student are viewing" and
+   "Choice favourite course from top category", and calls one role a
+   "Coursector". These were reproduced at first, on fidelity grounds. They are
+   corrected now: a reader who has not seen the Figma file has no way to tell a
+   faithful reproduction from a careless one, and reads every instance as a
+   mistake in the build.
 5. **Auth copy written out.** The login and register frames are typeset in
    Lorem Ipsum throughout: the greeting, the caption over the photo panel and
    the paragraph above the fields. Real copy sits in `authCopy` instead.
@@ -122,7 +132,8 @@ pixel ratio, and at 430px for the mobile shot.
 | ![Course catalogue](./docs/screenshot-courses.png) | ![Membership pricing](./docs/screenshot-membership.png) |
 | ![Blog index](./docs/screenshot-blog.png) | ![Course detail](./docs/screenshot-course-detail.png) |
 | ![Success stats and the cloud software band](./docs/screenshot-stats.png) | ![The two audience panels](./docs/screenshot-audiences.png) |
-| ![Login screen](./docs/screenshot-login.png) | ![Everything you can do in a physical classroom](./docs/screenshot-classroom.png) |
+| ![Login screen](./docs/screenshot-login.png) | ![FAQ accordion and testimonials](./docs/screenshot-faq.png) |
+| ![Course shelves](./docs/screenshot-shelves.png) | ![Everything you can do in a physical classroom](./docs/screenshot-classroom.png) |
 
 The five alternating feature rows, each pairing a product illustration with its
 copy:
@@ -154,3 +165,12 @@ Four of them needed judgement rather than a straight export:
   same file instead, for the reason given under the deviations above.
 - **Illustration ratios.** `featureRows[].ratio` now matches each export
   exactly, so `object-contain` never letterboxes.
+
+## License
+
+MIT — see [LICENSE](./LICENSE). The licence covers this implementation, not the
+Figma design it reproduces.
+
+---
+
+Built by **Irakli Tabukashvili**. Available for landing page and front-end work on [Upwork](https://upwork.com/freelancers/~01f246e13cb8549517).
