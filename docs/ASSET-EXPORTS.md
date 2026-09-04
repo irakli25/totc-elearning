@@ -1,9 +1,15 @@
-# Figma exports still needed
+# Figma exports
 
-The Figma MCP connection ran out of tool calls partway through this build (the
-Starter plan allows 20 per month). Everything below is what I could not pull
-myself. Nothing in the code changes when these land — each file simply replaces
-a generated placeholder at the same path.
+All 32 of these have landed. The list stays as the record of which node each
+image came from, so any single asset can be pulled again without reopening the
+whole file.
+
+The community file grants view access only, and the MCP server needs edit
+access to export, so the pull was done from a duplicate in the owner's own
+drafts. Duplicating preserves node ids, so the ids below still resolve.
+
+Nothing in the code changes when an export is replaced — each file simply sits
+at the path named here.
 
 Source file: https://www.figma.com/design/lElMe5N8yxWj4cqdLcssJO/E-Learning-Site--Community-
 

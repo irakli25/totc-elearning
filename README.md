@@ -108,30 +108,49 @@ the email `taken@totc.dev`. Any other credentials succeed and redirect to
 6. **Continue-learning row varied.** The frame repeats one course card three
    times. The row draws three different courses, instructors and lesson counts
    so it does not look like a data bug.
+7. **Card imagery varied.** The same reasoning applied to the exports. The
+   frame reuses one photo across all four course cards, and again across both
+   membership panels. Each slot draws a different photo from the file instead.
 
 ## Screenshots
 
-Captured from a production build at 1920px on a 2x device pixel ratio, and at
-430px for the mobile shot.
+Captured from a production build with headless Chrome at 1920px on a 2x device
+pixel ratio, and at 430px for the mobile shot.
 
 | | |
 | --- | --- |
+| ![Course catalogue](./docs/screenshot-courses.png) | ![Membership pricing](./docs/screenshot-membership.png) |
+| ![Blog index](./docs/screenshot-blog.png) | ![Course detail](./docs/screenshot-course-detail.png) |
 | ![Success stats and the cloud software band](./docs/screenshot-stats.png) | ![The two audience panels](./docs/screenshot-audiences.png) |
+| ![Login screen](./docs/screenshot-login.png) | ![Everything you can do in a physical classroom](./docs/screenshot-classroom.png) |
 
-![Everything you can do in a physical classroom](./docs/screenshot-classroom.png)
+The five alternating feature rows, each pairing a product illustration with its
+copy:
+
+![Our Features](./docs/screenshot-features.png)
 
 <img src="./docs/screenshot-mobile.png" alt="Mobile landing page" width="320">
 
-These cover the sections whose photography is real. The rest of the site is
-still showing the generated stand-ins described below.
+## Figma exports
 
-## Pending Figma exports
-
-The Figma MCP connection ran out of tool calls partway through the build, so
-some images are generated placeholders. `docs/ASSET-EXPORTS.md` lists exactly
-what to export and where to put it. Nothing in the code changes when they land.
+All 32 exports have landed. `docs/ASSET-EXPORTS.md` records which node each
+image came from, and the generator below reports any that go missing.
 
 ```bash
-node scripts/make-placeholders.mjs --list   # what is still missing
-node scripts/make-placeholders.mjs          # regenerate placeholders
+node scripts/make-placeholders.mjs --list   # reports what is missing, if anything
+node scripts/make-placeholders.mjs          # regenerates stand-ins for gaps
 ```
+
+Four of them needed judgement rather than a straight export:
+
+- **Podium view.** The node's bounding box runs 1122px tall because one stray
+  decorative element sits far below the illustration, leaving 58% of the frame
+  empty. The export is cropped to the illustration itself.
+- **Auth panels.** The login and register frames bake their Lorem Ipsum caption
+  into the photo. The exports are cropped above that band so the caption in
+  `authCopy` is the only text on the panel.
+- **Card imagery.** The frame reuses one photo across all four course cards and
+  again across both membership panels. Each slot gets a different photo from the
+  same file instead, for the reason given under the deviations above.
+- **Illustration ratios.** `featureRows[].ratio` now matches each export
+  exactly, so `object-contain` never letterboxes.
