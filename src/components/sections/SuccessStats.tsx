@@ -16,13 +16,13 @@ export function SuccessStats() {
           </p>
         </div>
 
-        <dl className="flex w-full flex-wrap items-start justify-center gap-x-10 gap-y-10 text-center sm:gap-x-16 2xl:flex-nowrap 2xl:justify-between 2xl:gap-x-[95px]">
+        <dl className="flex w-full flex-wrap items-start justify-center gap-x-10 gap-y-10 text-center sm:gap-x-16 min-[1728px]:flex-nowrap min-[1728px]:justify-between min-[1728px]:gap-x-[95px]">
           {successStats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center">
-              <dt className="bg-gradient-to-r from-[#136cb5] to-[#49bbbd] bg-clip-text text-[56px] leading-none font-light text-transparent lg:text-[72px] 2xl:text-[96px]">
+              <dt className="bg-gradient-to-r from-[#136cb5] to-[#49bbbd] bg-clip-text text-[56px] leading-none font-light text-transparent lg:text-[72px] min-[1728px]:text-[96px]">
                 {stat.value}
               </dt>
-              <dd className="text-lg leading-[1.3] whitespace-nowrap text-[#010514]/80 lg:text-2xl 2xl:text-[32px]">
+              <dd className="text-lg leading-[1.3] whitespace-nowrap text-[#010514]/80 lg:text-2xl min-[1728px]:text-[32px]">
                 {stat.label}
               </dd>
             </div>
