@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand — sampled from the Figma file */
+  --color-teal-50: #f0fafa;
+  --color-teal-100: #d2f0f0;
+  --color-teal-200: #a9e3e4;
+  --color-teal-300: #7ed3d5;
+  --color-teal-400: #49bbbd;
+  --color-teal-500: #23bdee;
+  --color-teal-600: #2f9598;
+  --color-teal-700: #136a6c;
+
+  --color-ink: #2f327d;
+  --color-ink-soft: #252641;
+  --color-orange: #f48c06;
+  --color-orange-soft: #f88c3d;
+  --color-pink: #d8587e;
+  --color-pink-soft: #f3627c;
+  --color-pink-bar: #f25471;
+
+  --color-body: #696984;
+  --color-muted: #595959;
+  --color-muted-2: #545567;
+  --color-muted-3: #5b5b5b;
+
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  /* Shadows lifted from the design's card and pill styles */
+  --shadow-pill: 0 20px 24px 0 rgb(0 0 0 / 0.03);
+  --shadow-card: 0 10px 60px 0 rgb(38 45 118 / 0.08);
+  --shadow-tile: 0 8px 40px 0 rgb(210 77 101 / 0.26);
+  --shadow-float: 0 4px 100px 0 rgb(29 28 24 / 0.25);
+
+  --radius-card: 20px;
+  --radius-pill: 80px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The design leans on very large display type. Clamp it so the 54px and 79px
+   headings stay readable on phones without a breakpoint for every heading. */
+@utility display-xl {
+  font-size: clamp(2rem, 1.35rem + 2.7vw, 3.375rem);
+  line-height: 1.15;
+}
+
+@utility display-lg {
+  font-size: clamp(1.75rem, 1.3rem + 1.9vw, 2.75rem);
+  line-height: 1.2;
+}
+
+@utility display-md {
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
+  line-height: 1.25;
+}
+
+@utility body-lg {
+  font-size: clamp(1rem, 0.93rem + 0.32vw, 1.5rem);
+  line-height: 1.6;
+}
+
+@utility body-md {
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.25rem);
+  line-height: 1.7;
+}
+
+/* Visible focus on both white and teal grounds. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
