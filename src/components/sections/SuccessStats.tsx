@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { successStats } from "@/lib/content";
+import { successBlurb, successStats } from "@/lib/content";
 
 /* "Our Success" — Figma node 136:353. The counters use a light 96px face with
  * a #136CB5 → #49BBBD gradient clipped to the text. */
@@ -10,9 +10,7 @@ export function SuccessStats() {
         <div className="flex max-w-[750px] flex-col items-center gap-4 text-center">
           <h2 className="display-md font-bold text-[#010514]">Our Success</h2>
           <p className="text-base leading-[1.6] text-[#010514]/80 lg:text-lg">
-            Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae
-            sollicitudin at nec nam et pharetra gravida. Adipiscing a quis
-            ultrices eu ornare tristique vel nisl orci.
+            {successBlurb}
           </p>
         </div>
 

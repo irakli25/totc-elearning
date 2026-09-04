@@ -9,7 +9,6 @@ import { CourseCard } from "@/components/ui/CourseCard";
 import { SectionRow } from "@/components/ui/SectionRow";
 import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import {
-  categoryBlurb,
   coachingCta,
   continueLearning,
   courseCategories,
@@ -38,7 +37,7 @@ export default function CoursesPage() {
                 href="/courses"
                 className="text-base font-medium text-teal-400 underline-offset-4 hover:underline lg:text-lg"
               >
-                View hisotry
+                View history
               </Link>
             </div>
 
@@ -76,17 +75,17 @@ export default function CoursesPage() {
         <section className="py-14 lg:py-20">
           <Container>
             <h2 className="display-md max-w-[792px] font-semibold text-ink">
-              Choice favourite course from top category
+              Choose a favourite course from a top category
             </h2>
             <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4 lg:gap-[45px]">
-              {courseCategories.map((category, index) => (
-                <li key={`${category.title}-${index}`} className="flex flex-col gap-4">
+              {courseCategories.map((category) => (
+                <li key={category.title} className="flex flex-col gap-4">
                   <CategoryIcon kind={category.icon} />
                   <h3 className="text-xl font-semibold text-ink lg:text-2xl">
                     {category.title}
                   </h3>
                   <p className="text-sm leading-[1.7] text-body lg:text-base">
-                    {categoryBlurb}
+                    {category.blurb}
                   </p>
                 </li>
               ))}

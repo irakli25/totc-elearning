@@ -147,7 +147,7 @@ export default function MembershipPage() {
                       alt=""
                       width={118}
                       height={118}
-                      className="size-[118px] rounded-full object-cover object-[30%_18%]"
+                      className="size-[118px] rounded-full object-cover"
                     />
                     <figcaption className="text-xl font-semibold text-ink lg:text-2xl">
                       {quote.name}
