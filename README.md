@@ -7,6 +7,8 @@ and pricing page, a blog with article pages, and login and register screens.
 Design source:
 [E-Learning Site (Community)](https://www.figma.com/design/lElMe5N8yxWj4cqdLcssJO/E-Learning-Site--Community-)
 
+![TOTC landing page hero](./docs/screenshot-hero.png)
+
 ## Stack
 
 | Concern | Choice |
@@ -98,6 +100,22 @@ the email `taken@totc.dev`. Any other credentials succeed and redirect to
    in the design links to both.
 4. **Typos preserved.** "Lastest News and Resources", "Rememebr me", "View
    hisotry" and "Top Raiting" are spelled as they are in the Figma file.
+
+## Screenshots
+
+Captured from a production build at 1920px on a 2x device pixel ratio, and at
+430px for the mobile shot.
+
+| | |
+| --- | --- |
+| ![Success stats and the cloud software band](./docs/screenshot-stats.png) | ![The two audience panels](./docs/screenshot-audiences.png) |
+
+![Everything you can do in a physical classroom](./docs/screenshot-classroom.png)
+
+<img src="./docs/screenshot-mobile.png" alt="Mobile landing page" width="320">
+
+These cover the sections whose photography is real. The rest of the site is
+still showing the generated stand-ins described below.
 
 ## Pending Figma exports
 
