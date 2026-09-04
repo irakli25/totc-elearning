@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { site } from "@/lib/content";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -10,12 +11,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
-    default: "TOTC — Studying online is now much easier",
-    template: "%s — TOTC",
+    default: `${site.name} — ${site.tagline}`,
+    template: `%s — ${site.name}`,
   },
-  description:
-    "TOTC is an interesting platform that will teach you in more an interactive way. Virtual classrooms, live lessons and course management in one place.",
+  description: site.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
