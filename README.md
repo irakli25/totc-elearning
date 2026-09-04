@@ -100,6 +100,14 @@ the email `taken@totc.dev`. Any other credentials succeed and redirect to
    in the design links to both.
 4. **Typos preserved.** "Lastest News and Resources", "Rememebr me", "View
    hisotry" and "Top Raiting" are spelled as they are in the Figma file.
+5. **Auth copy written out.** The login and register frames are typeset in
+   Lorem Ipsum throughout: the greeting, the caption over the photo panel and
+   the paragraph above the fields. Real copy sits in `authCopy` instead.
+   Placeholder Latin on a working sign-in screen reads as an unfinished build,
+   not as fidelity to the design.
+6. **Continue-learning row varied.** The frame repeats one course card three
+   times. The row draws three different courses, instructors and lesson counts
+   so it does not look like a data bug.
 
 ## Screenshots
 
