@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { Spinner } from "@/components/auth/LoginForm";
 import { register as registerAccount } from "@/app/(auth)/actions";
 import { registerSchema, type RegisterValues } from "@/lib/validation";
+import { authCopy } from "@/lib/content";
 
 export function RegisterForm() {
   const router = useRouter();
@@ -38,8 +39,7 @@ export function RegisterForm() {
   return (
     <form onSubmit={onSubmit} noValidate className="flex flex-col gap-6">
       <p className="text-base leading-[1.6] text-body">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
+        {authCopy.register.intro}
       </p>
 
       <TextField

@@ -8,9 +8,13 @@ import { cn } from "@/lib/cn";
  * dropped and the form fills the screen, matching frames 28:62 and 28:97. */
 export function AuthShell({
   image,
+  title,
+  subtitle,
   children,
 }: {
   image: string;
+  title: string;
+  subtitle: string;
   children: React.ReactNode;
 }) {
   return (
@@ -46,12 +50,8 @@ export function AuthShell({
             )}
           />
           <div className="absolute right-9 bottom-14 left-9 flex flex-col gap-1.5 text-white">
-            <p className="text-3xl font-bold xl:text-[40px]">
-              Lorem Ipsum is simply
-            </p>
-            <p className="text-lg text-white/80 xl:text-2xl">
-              Lorem Ipsum is simply
-            </p>
+            <p className="text-3xl font-bold xl:text-[40px]">{title}</p>
+            <p className="text-lg text-white/80 xl:text-2xl">{subtitle}</p>
           </div>
         </div>
 

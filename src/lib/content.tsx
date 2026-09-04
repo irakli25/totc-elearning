@@ -267,11 +267,33 @@ export const courseRows = [
   { id: "viewing", title: "Student are viewing" },
 ];
 
+/* Three courses in flight for the signed-in student. Titles come from
+ * courseTitles so this row can never drift from the catalogue. The frame
+ * repeats one card three times, which reads as a data bug rather than a
+ * design choice once the page is populated. */
 export const continueLearning = [
-  { title: "AWS Certified Solutions Architect", author: "Lina", progress: "Lesson 5 of 7", image: "/images/courses/lesson-1.png" },
-  { title: "AWS Certified Solutions Architect", author: "Lina", progress: "Lesson 5 of 7", image: "/images/courses/lesson-2.png" },
-  { title: "AWS Certified Solutions Architect", author: "Lina", progress: "Lesson 5 of 7", image: "/images/courses/lesson-3.png" },
+  { title: courseTitles[0], author: "Marcus Reed", progress: "Lesson 5 of 7", image: "/images/courses/lesson-1.png" },
+  { title: courseTitles[1], author: "Priya Raman", progress: "Lesson 2 of 9", image: "/images/courses/lesson-2.png" },
+  { title: courseTitles[3], author: "Sofia Adeyemi", progress: "Lesson 8 of 12", image: "/images/courses/lesson-3.png" },
 ];
+
+/* The auth frames are typeset with Lorem Ipsum throughout: the greeting, the
+ * caption over the photo panel and the paragraph above the fields. Real copy
+ * is written here instead — placeholder Latin on a live sign-in screen reads
+ * as an unfinished build rather than a faithful implementation. */
+export const authCopy = {
+  greeting: "Welcome to TOTC..!",
+  login: {
+    panelTitle: "Every class in one place",
+    panelSubtitle: "Pick up exactly where you left off",
+    intro: "Sign in to reach your courses, assignments and grades.",
+  },
+  register: {
+    panelTitle: "Start learning today",
+    panelSubtitle: "Join the 15,000 students already on TOTC",
+    intro: "Create an account to enrol in courses and track your progress.",
+  },
+} as const;
 
 export const courseCategories = [
   { title: "Design", icon: "pen" as const },
