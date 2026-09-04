@@ -1,0 +1,272 @@
+{
+  "file": "https://www.figma.com/design/lElMe5N8yxWj4cqdLcssJO/E-Learning-Site--Community-",
+  "note": "Each entry is one Figma node exported as PNG at 2x. Width/height below are the 2x pixel sizes. Dropping a real export at public/<path> replaces the generated placeholder with no code change.",
+  "assets": [
+    {
+      "path": "images/features/podium-view.png",
+      "node": "10:478",
+      "width": 1566,
+      "height": 966,
+      "of": "Our Features / block 1 illustration"
+    },
+    {
+      "path": "images/features/teaching-tools.png",
+      "node": "10:578",
+      "width": 1274,
+      "height": 1222,
+      "of": "Our Features / block 2 illustration"
+    },
+    {
+      "path": "images/features/assessments.png",
+      "node": "10:672",
+      "width": 1234,
+      "height": 1302,
+      "of": "Our Features / block 3 illustration"
+    },
+    {
+      "path": "images/features/gradebook.png",
+      "node": "10:712",
+      "width": 1616,
+      "height": 1120,
+      "of": "Our Features / block 4 illustration"
+    },
+    {
+      "path": "images/features/one-on-one.png",
+      "node": "10:767",
+      "width": 1510,
+      "height": 998,
+      "of": "Our Features / block 5 illustration"
+    },
+    {
+      "path": "images/home/testimonial-gloria.png",
+      "node": "10:424",
+      "width": 1120,
+      "height": 1400,
+      "of": "Testimonials / portrait"
+    },
+    {
+      "path": "images/home/news-featured.png",
+      "node": "10:386",
+      "width": 1280,
+      "height": 680,
+      "of": "Latest News / featured card image"
+    },
+    {
+      "path": "images/home/news-1.png",
+      "node": "10:396",
+      "width": 560,
+      "height": 400,
+      "of": "Latest News / list thumbnail 1"
+    },
+    {
+      "path": "images/home/news-2.png",
+      "node": "10:404",
+      "width": 560,
+      "height": 400,
+      "of": "Latest News / list thumbnail 2"
+    },
+    {
+      "path": "images/home/news-3.png",
+      "node": "10:413",
+      "width": 560,
+      "height": 400,
+      "of": "Latest News / list thumbnail 3"
+    },
+    {
+      "path": "images/auth/login-panel.png",
+      "node": "28:132",
+      "width": 1474,
+      "height": 1650,
+      "of": "Login / photo panel"
+    },
+    {
+      "path": "images/auth/register-panel.png",
+      "node": "28:173",
+      "width": 1462,
+      "height": 1650,
+      "of": "Register / photo panel"
+    },
+    {
+      "path": "images/courses/course-1.png",
+      "node": "54:434",
+      "width": 748,
+      "height": 520,
+      "of": "Course card thumbnail 1 (from the Recommended row)"
+    },
+    {
+      "path": "images/courses/course-2.png",
+      "node": "54:434",
+      "width": 748,
+      "height": 520,
+      "of": "Course card thumbnail 2 (from the Recommended row)"
+    },
+    {
+      "path": "images/courses/course-3.png",
+      "node": "54:434",
+      "width": 748,
+      "height": 520,
+      "of": "Course card thumbnail 3 (from the Recommended row)"
+    },
+    {
+      "path": "images/courses/course-4.png",
+      "node": "54:434",
+      "width": 748,
+      "height": 520,
+      "of": "Course card thumbnail 4 (from the Recommended row)"
+    },
+    {
+      "path": "images/courses/lesson-1.png",
+      "node": "47:348",
+      "width": 868,
+      "height": 520,
+      "of": "Continue-learning card image 1"
+    },
+    {
+      "path": "images/courses/lesson-2.png",
+      "node": "47:348",
+      "width": 868,
+      "height": 520,
+      "of": "Continue-learning card image 2"
+    },
+    {
+      "path": "images/courses/lesson-3.png",
+      "node": "47:348",
+      "width": 868,
+      "height": 520,
+      "of": "Continue-learning card image 3"
+    },
+    {
+      "path": "images/blog/hero.png",
+      "node": "30:88",
+      "width": 3840,
+      "height": 1304,
+      "of": "Blog page / hero banner"
+    },
+    {
+      "path": "images/blog/post-hero.png",
+      "node": "30:88",
+      "width": 3840,
+      "height": 1304,
+      "of": "Blog detail / article hero"
+    },
+    {
+      "path": "images/blog/post-1.png",
+      "node": "37:113",
+      "width": 1370,
+      "height": 764,
+      "of": "Related Blog card image 1"
+    },
+    {
+      "path": "images/blog/post-2.png",
+      "node": "37:113",
+      "width": 1370,
+      "height": 764,
+      "of": "Related Blog card image 2"
+    },
+    {
+      "path": "images/blog/post-3.png",
+      "node": "37:113",
+      "width": 1370,
+      "height": 764,
+      "of": "Related Blog card image 3"
+    },
+    {
+      "path": "images/blog/post-4.png",
+      "node": "37:113",
+      "width": 1370,
+      "height": 764,
+      "of": "Related Blog card image 4"
+    },
+    {
+      "path": "images/blog/cat-ux.png",
+      "node": "37:76",
+      "width": 712,
+      "height": 654,
+      "of": "Blog category card / UX-UI"
+    },
+    {
+      "path": "images/blog/cat-react.png",
+      "node": "37:77",
+      "width": 712,
+      "height": 654,
+      "of": "Blog category card / React"
+    },
+    {
+      "path": "images/blog/cat-php.png",
+      "node": "37:87",
+      "width": 712,
+      "height": 654,
+      "of": "Blog category card / PHP"
+    },
+    {
+      "path": "images/blog/cat-js.png",
+      "node": "37:97",
+      "width": 712,
+      "height": 654,
+      "of": "Blog category card / JavaScript"
+    },
+    {
+      "path": "images/membership/teacher.png",
+      "node": "54:225",
+      "width": 1572,
+      "height": 1524,
+      "of": "Membership / Become a Teacher panel"
+    },
+    {
+      "path": "images/membership/coursector.png",
+      "node": "54:257",
+      "width": 1572,
+      "height": 1524,
+      "of": "Membership / Become a Coursector panel"
+    },
+    {
+      "path": "images/courses/detail-hero.png",
+      "node": "135:340",
+      "width": 2400,
+      "height": 1350,
+      "of": "Course Detail / hero media"
+    }
+  ],
+  "referenceFrames": [
+    {
+      "node": "10:358",
+      "name": "Landing",
+      "route": "/"
+    },
+    {
+      "node": "28:131",
+      "name": "Login",
+      "route": "/login"
+    },
+    {
+      "node": "28:172",
+      "name": "Register",
+      "route": "/register"
+    },
+    {
+      "node": "47:247",
+      "name": "Course",
+      "route": "/courses"
+    },
+    {
+      "node": "46:217",
+      "name": "Course Detail",
+      "route": "/courses/[slug]"
+    },
+    {
+      "node": "42:319",
+      "name": "MemberShip page",
+      "route": "/membership"
+    },
+    {
+      "node": "34:89",
+      "name": "Blog page",
+      "route": "/blog"
+    },
+    {
+      "node": "30:64",
+      "name": "Blog detail",
+      "route": "/blog/[slug]"
+    }
+  ]
+}

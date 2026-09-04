@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated stand-ins for Figma exports that have not landed yet
+/public/.placeholders.json
